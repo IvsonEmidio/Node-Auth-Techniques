@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 
 export class TokenService {
+
   public generate(userData: { id: number; name: string }) {
     let payload = {
       id: userData.id,
